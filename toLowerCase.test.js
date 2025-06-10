@@ -1,6 +1,5 @@
-const toLowerCase = (text) => {
-  return text.toLowerCase();
-};
+const tests = require('./test-code.js');
+const { toLowerCase } = tests;
 
 test('La funzione createSlug restituisce una stringa in lowercase.', () => {
   expect(toLowerCase('TESTO MINUSCOLO')).toBe('testo minuscolo');
