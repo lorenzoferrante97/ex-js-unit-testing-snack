@@ -15,3 +15,7 @@ test('La funzione createSlug restituisce una stringa in lowercase.', () => {
 test('La funzione createSlug sostituisce gli spazi con -', () => {
   expect(createSlug(initialText)).toBe('testo-slug-per-test');
 });
+
+test('La funzione createSlug lancia un errore se il titolo è vuoto o non valido', () => {
+  expect(createSlug('')).toThrow('La stringa non può essere vuota');
+});
