@@ -4,7 +4,8 @@ const getInitials = (fullName) => {
 };
 
 const createSlug = (text) => {
-  return text.toLowerCase();
+  const slug = text.split(' ').join('-');
+  return slug.toLowerCase();
 };
 
 const average = (nums) => {
