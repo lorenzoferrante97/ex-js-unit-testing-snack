@@ -22,9 +22,15 @@ const isPalindrome = (text) => {
   return text === reverseText;
 };
 
+const findPostById = (posts, id) => {
+  const foundIndex = posts.findIndex((post) => post.id === id);
+  return posts[foundIndex];
+};
+
 module.exports = {
   getInitials,
   createSlug,
   average,
   isPalindrome,
+  findPostById,
 };

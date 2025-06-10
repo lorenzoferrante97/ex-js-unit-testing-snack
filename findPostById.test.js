@@ -1,7 +1,5 @@
-const findPostById = (posts, id) => {
-  const foundIndex = posts.findIndex((post) => post.id === id);
-  return posts[foundIndex];
-};
+const tests = require('./test-code.js');
+const { findPostById } = tests;
 
 test('La funzione findPostById restituisce il post corretto dato l’array di post e l’id', () => {
   const posts = [
