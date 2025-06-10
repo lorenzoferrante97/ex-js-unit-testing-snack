@@ -1,8 +1,5 @@
-const isPalindrome = (text) => {
-  const reverseText = text.split('').reverse().join('');
-  console.log(text, reverseText);
-  return text === reverseText;
-};
+const tests = require('./test-code.js');
+const { isPalindrome } = tests;
 
 test('La funzione isPalindrome verifica se una stringa è un palindromo', () => {
   expect(isPalindrome('osso')).toBeTruthy();

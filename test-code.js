@@ -13,8 +13,14 @@ const average = (nums) => {
   return sum / nums.length;
 };
 
+const isPalindrome = (text) => {
+  const reverseText = text.split('').reverse().join('');
+  return text === reverseText;
+};
+
 module.exports = {
   getInitials,
   createSlug,
   average,
+  isPalindrome,
 };
