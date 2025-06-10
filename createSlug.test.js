@@ -17,5 +17,5 @@ test('La funzione createSlug sostituisce gli spazi con -', () => {
 });
 
 test('La funzione createSlug lancia un errore se il titolo è vuoto o non valido', () => {
-  expect(createSlug('')).toThrow('La stringa non può essere vuota');
+  expect(() => createSlug('    ')).toThrow('La stringa non può essere vuota');
 });

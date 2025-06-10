@@ -4,8 +4,12 @@ const getInitials = (fullName) => {
 };
 
 const createSlug = (text) => {
-  const slug = text.split(' ').join('-');
-  return slug.toLowerCase();
+  if (text.trim().length != 0) {
+    const slug = text.split(' ').join('-');
+    return slug.toLowerCase();
+  } else {
+    throw new Error('La stringa non può essere vuota');
+  }
 };
 
 const average = (nums) => {
